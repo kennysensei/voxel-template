@@ -55,7 +55,7 @@ window.initGame = function() {
     window.gameWorld = document.getElementById('world');
     window.game.appendTo(window.gameWorld);
     window.createPlayer = window.player(window.game);
-    window.gamePlayer = createPlayer('greg.png');
+    window.gamePlayer = createPlayer('https://kennysensei.github.io/voxel-template/greg.png');
     window.gamePlayer.possess();
     window.gamePlayer.yaw.position.set(2, 14, 4);
     defaultSetup(window.game, window.gamePlayer);
@@ -536,7 +536,7 @@ function Game(opts) {
 
   this.materials = texture({
     game: this,
-    texturePath: opts.texturePath || './textures/',
+    texturePath: opts.texturePath || 'https://kennysensei.github.io/voxel-template/textures/',
     materialType: opts.materialType || THREE.MeshLambertMaterial,
     materialParams: opts.materialParams || {},
     materialFlatColor: opts.materialFlatColor === true
