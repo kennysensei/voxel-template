@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Snap! Build Your Own World. Alpha</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	    <link rel="stylesheet" href="style.css" />
+	</head>
+	<body style="margin: 0;">
+		<div id="world"></div>
+	    <div id="crosshair"></div>
+		<div id="cmdbox">
+		      <input type="text" id="cmd" placeholder="" /><br/>
+		      Press Escape to pause game and input commands.<br/>
+	    </div>
+        <script type="text/javascript" src="bundle.js"></script>
+        <script>window.game.appendTo(document.getElementById("world"))</script>
+	</body>
+</html>
